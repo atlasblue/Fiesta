@@ -16,6 +16,8 @@ sed -i "s/REPLACE_DB_DIALECT/mysql/g" /code/Fiesta/config/config.js
 sed -i "s/REPLACE_DB_USER_NAME/fiesta/g" /code/Fiesta/config/config.js
 sed -i "s/REPLACE_DB_PASSWORD/fiesta/g" /code/Fiesta/config/config.js
 
+sudo yum install npm -y
+
 npm install -g nodemon
 
 # Get ready to start the application
@@ -28,5 +30,4 @@ npm install
 npm run build
 
 # Run the NPM Application
-cd /code/Fiesta
-npm start
+
