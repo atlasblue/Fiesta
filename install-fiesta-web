@@ -30,4 +30,6 @@ npm install
 npm run build
 
 # Run the NPM Application
+cd /code/Fiesta
+npm start
 
