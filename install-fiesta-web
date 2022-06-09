@@ -1,5 +1,11 @@
 #!/bin/sh
 
+sudo yum update -y
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+sudo setenforce 0
+sed -i s\/^SELINUX=.*$\/SELINUX=disabled\/ \/etc\/selinux\/config
+
 # Clone the Repo into the container in the /code folder we already created in the dockerfile
 git clone https://github.com/sharonpamela/Fiesta /code/Fiesta
 
