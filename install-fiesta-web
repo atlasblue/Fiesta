@@ -1,6 +1,5 @@
 #!/bin/sh
 
-sudo yum update -y
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo setenforce 0
