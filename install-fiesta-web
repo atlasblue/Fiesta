@@ -4,6 +4,8 @@ sudo systemctl disable firewalld
 sudo setenforce 0
 sed -i s\/^SELINUX=.*$\/SELINUX=disabled\/ \/etc\/selinux\/config
 
+sudo yum install git -y
+
 git clone https://github.com/sharonpamela/Fiesta /code/Fiesta
 
 sed -i 's/REPLACE_DB_NAME/FiestaDB/g' /code/Fiesta/config/config.js
