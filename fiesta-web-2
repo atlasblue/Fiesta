@@ -2,3 +2,6 @@ setenforce 0
 sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
 systemctl disable firewalld
 systemctl stop firewalld
+hostnamectl set-hostname web-vm
+yum update -y
+yum upgrade -y
