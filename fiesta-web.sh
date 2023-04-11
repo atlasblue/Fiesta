@@ -16,7 +16,8 @@ npm install
 npm run build
 npm install nodemon concurrently
 sed -i 's/REPLACE_DB_NAME/FiestaDB/g' /code/Fiesta/config/config.js
-sed -i "s/REPLACE_DB_HOST_ADDRESS/$1/g" /code/Fiesta/config/config.js
+# replace below x.x.x.x by DB Server IP address
+sed -i "s/REPLACE_DB_HOST_ADDRESS/x.x.x.x/g" /code/Fiesta/config/config.js 
 sed -i "s/REPLACE_DB_DIALECT/mysql/g" /code/Fiesta/config/config.js
 sed -i "s/REPLACE_DB_USER_NAME/fiesta/g" /code/Fiesta/config/config.js
 sed -i "s/REPLACE_DB_PASSWORD/fiesta/g" /code/Fiesta/config/config.js
