@@ -8,7 +8,7 @@ sudo yum install -y mysql mysql-client git gcc curl wget vim gcc-c++
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install -y nodejs
 node --version
-git clone https://github.com/sharonpamela/Fiesta.git /code/Fiesta
+git clone https://github.com/atlasblue/Fiesta-APP /code/Fiesta
 cd /code/Fiesta
 npm install
 cd /code/Fiesta/client
