@@ -10,7 +10,7 @@ sudo chown mysql:mysql /run/mysqld
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
 sudo mkdir /code
-sudo git clone https://github.com/sharonpamela/Fiesta /code/Fiesta
+sudo git clone https://github.com/atlasblue/Fiesta-APP /code/Fiesta
 sudo mysql < /code/Fiesta/seeders/FiestaDB-mySQL.sql
 sudo echo "grant all privileges on FiestaDB.* to fiesta@'%' identified by 'fiesta';" | sudo mysql
 sudo echo "grant all privileges on FiestaDB.* to fiesta@localhost identified by 'fiesta';" | sudo mysql
